@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decomp-salario-real"
+version = "0.1.0"
+description = "Descomposición contable del salario real por hora (EUKLEMS 2024 + deflactores INE/CNE). v1: España."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+# Los módulos viven en src/ con imports planos (`from data_loading import ...`).
+# Se instalan como módulos top-level (no como paquete `src`) para que `pip install
+# -e .` los haga importables SIN depender del sys.path.insert de run.py/conftest.
+# Por eso NO hay src/__init__.py: src/ no es un paquete, es el directorio raíz de
+# estos módulos sueltos.
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["data_loading", "decomposition", "reallocation", "run"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

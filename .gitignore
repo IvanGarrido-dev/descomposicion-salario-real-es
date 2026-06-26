@@ -1,0 +1,22 @@
+# Salidas generadas (regenerables con `python src/run.py`)
+output/
+
+# Temporales de trabajo
+scratchpad/
+repro_test/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# DATOS: los inputs de España SÍ se versionan (son pequeños, ~2,3 MB, y hacen que
+# clonar+correr funcione sin descargar nada). NO se ignoran:
+#   data/euklems_2024/*.xlsx        (EUKLEMS & INTANProd 2024, LLEE)
+#   data/deflactores/269.xlsx, 76144.xlsx, ipc_enlazado.csv, cne_p31.csv  (INE/CNE)
+# Procedencia y MD5 en SOURCES.md; trazabilidad/actualización en data/download_data.py.
+#
+# Para v2 (multi-país), si los xlsx de otros países pesan, ignorar SOLO esos aquí
+# (no los de ES). Ejemplo: data/euklems_2024/[!E][!S]*.xlsx

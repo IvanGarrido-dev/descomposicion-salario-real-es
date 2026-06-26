@@ -6,13 +6,13 @@ contables —participación del trabajo, productividad por hora (abierta en cinc
 factores intrasectoriales + reasignación + composición del crecimiento), y la
 cuña de precios— mediante una identidad **exacta**.
 
-> **Lo que esto es y lo que no es.** Es una descomposición contable: dice *dónde*
-> está, en la contabilidad, el origen del estancamiento salarial. **No** es una
-> explicación causal. La frase que gobierna todo el proyecto:
-> **señala dónde cavar, no qué hay enterrado.**
+> **Qué es** Es una descomposición contable: dice *dónde*
+> está, en la contabilidad, el origen del estancamiento salarial.
+
+> **señala dónde cavar; qué hay enterrado es harina de otro costal**
 
 Fuente de verdad del diseño: [`DESIGN.md`](DESIGN.md). Seguimiento operativo:
-[`CLAUDE.md`](CLAUDE.md). Procedencia de datos: [`SOURCES.md`](SOURCES.md).
+[`Seguimiento.md`](Seguimiento.md). Procedencia de datos: [`SOURCES.md`](SOURCES.md).
 
 ---
 
@@ -54,7 +54,7 @@ prácticamente plano. Esa cifra pequeña es la resta de fuerzas grandes
 | Cuña de precios | −2,3 |
 | **Salario real (total)** | **+5,7** |
 
-Lectura contable (no causal): la inversión y la cualificación aportaron unos
+Lectura contable: la inversión y la cualificación aportaron unos
 **+22 p.p.** (composición laboral +10,0 y servicios de capital +12,0); un residuo de productividad hundido (**−10,6**) y una participación
 del trabajo en caída (**−6,5**) se llevaron casi todo. La PTF es el mayor lastre
 contable. Gráficos en [`output/`](output/) (anatomía, apertura del residuo,
@@ -62,19 +62,18 @@ termómetro, banda del deflactor, cobertura, trayectoria de la PTF).
 
 ---
 
-## Capa de honestidad (no es opcional)
+## Capa de honestidad
 
 Esta sección es parte del diseño (DESIGN §7), no un descargo. Sin ella, los
 números engañan.
 
-### 1. Es anatomía, no causa
-La descomposición **localiza** el origen contable del estancamiento; no explica
-**por qué**. "La contabilidad sitúa el grueso en el residuo de productividad" es
+### 1. Es anatomía
+La descomposición **localiza** el origen contable del estancamiento. "La contabilidad sitúa el grueso en el residuo de productividad" es
 un **dato**. "Esto se debe a X" es una **interpretación**, y va marcada como tal.
 
 ### 2. Qué cabe dentro del residuo (la PTF)
 La PTF es el **residuo de Solow**: lo que queda de la productividad tras restar
-las contribuciones medidas del capital y el trabajo. **No es "eficiencia".** Una
+las contribuciones medidas del capital y el trabajo. Una
 PTF de −10,6 es compatible con varias historias que el método **no distingue**:
 
 - **Mala asignación del capital** (hipótesis del ladrillo): capital volcado a
@@ -86,44 +85,38 @@ PTF de −10,6 es compatible con varias historias que el método **no distingue*
 - **Infrautilización de capacidad** (el capital medido no se usa al 100 %).
 - **Mismeasurement de intangibles** (I+D, software, organización mal capturados).
 
-> ⚠ **Importante:** este proyecto **no** afirma "no es un problema de márgenes".
-> Sería deshonesto: es justo una de las cosas que el método no puede ver. Lo
-> honesto es declarar que el residuo es **un saco de hipótesis no separadas**, no
-> un veredicto.
-
-### 3. Sesgos conocidos (declarados, no escondidos)
+### 3. Sesgos conocidos
 - **Imputación de ramas sin desglose.** El 4,2 % de las horas (química, farma,
   electrónica, material eléctrico, T, U) no tiene desglose de contribuciones; se
   renormalizan los pesos sobre las ramas con dato. Es un **supuesto** (esas ramas
-  se comportan como la media), no una corrección neutra. Como son ramas de PTF
+  se comportan como la media). Como son ramas de PTF
   probablemente alta, el sesgo va **hacia lo más negativo**: −10,6 es la mejor
   cifra disponible, con sesgo conocido hacia exagerar lo negativo.
 - **La cifra depende de hacer bien las unidades.** Con la familia de
   contribuciones incoherente con la identidad por hora, la PTF salía −12,3; con
   unidades coherentes, −10,1; con la renormalización de cobertura, −10,6. El
   derrumbe es real, pero versiones previas lo exageraban ~1,7 p.p.
-- **El "between" no es reasignación de horas.** Lo que se solía contar como
+- **El "between":** Lo que se solía contar como
   "reasignación sectorial" (+3,1) es, bien medido, +0,6 de reasignación de horas
   y **+2,6 de composición del crecimiento** (ramas ya productivas creciendo más
-  en output), no trasvase de mano de obra.
+  en output), pero no trasvase de mano de obra.
 - **Banda del deflactor.** El salario real acumulado es +5,7 con el deflactor del
   consumo de la CNE y +4,8 con el IPC. El estancamiento aguanta con cualquiera;
   la magnitud tiene una banda de ~0,9 p.p.
 - **2020-2021** se reportan solo como **descriptivos** (COVID): horas con saltos
   enormes y un artefacto del año de referencia del deflactor (volumen 2020=100).
-  No usar para la tesis estructural.
 
 ### 4. Sin recetas de política
 La descomposición señala un **cuello de botella contable** (el residuo). Qué
 política lo resuelve —si es competencia, inversión pública, regulación, formación—
-es **otra discusión** que **no se deriva** de esta identidad. Cualquier propuesta
+es **otra discusión**. Cualquier propuesta
 es opinión del autor, no un resultado del modelo.
 
 ### 5. Sobre el benchmark multi-país (futuro)
 Cuando exista, responderá *"¿es España un outlier?"*, **no** *"¿es real la PTF?"*.
 Todos los países heredarían los **mismos supuestos** (competencia perfecta,
 medición de intangibles, encadenamiento); un patrón común podría ser un
-**artefacto global de medición**, no una verdad sobre las economías.
+**artefacto global de medición**.
 
 ---
 

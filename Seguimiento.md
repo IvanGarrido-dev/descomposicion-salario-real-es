@@ -1,4 +1,4 @@
-# CLAUDE.md — Seguimiento del proyecto
+# Seguimiento.md — Seguimiento del proyecto
 
 > Documento de **seguimiento operativo**, cargado cada sesión. La **fuente de
 > verdad del diseño es [DESIGN.md](DESIGN.md)** — aquí no se redecide nada: se
@@ -86,7 +86,7 @@ src/run.py` regenera salidas.
 
 Leyenda: ⬜ pendiente · 🟡 en curso · ✅ hecho y testeado
 
-- ✅ **0. Andamiaje** — esqueleto, datos copiados+MD5, `CLAUDE.md`, `SOURCES.md`,
+- ✅ **0. Andamiaje** — esqueleto, datos copiados+MD5, `Seguimiento.md`, `SOURCES.md`,
   `pyproject.toml`, `.gitignore`. (INV-1 verificado.)
 - ✅ **1. Datos** — `src/data_loading.py` (`CountryData` + gate INV-3 + LP auto-select),
   `data/build_deflactores.py` + `ipc_enlazado.csv`/`cne_p31.csv` con MD5 en `SOURCES.md`.
@@ -143,7 +143,7 @@ capa de honestidad del README. Solo tras cerrar v1: v2 multi-país.
 ```
 decomp_ivan/
 ├── DESIGN.md            # diseño (fuente de verdad)
-├── CLAUDE.md            # este seguimiento
+├── Seguimiento.md       # este seguimiento
 ├── README.md            # qué es / cómo correrlo / qué NO afirma  ✔
 ├── SOURCES.md · pyproject.toml · .gitignore  ✔
 ├── data/

@@ -9,7 +9,7 @@ cuña de precios— mediante una identidad **exacta**.
 > **Qué es** Es una descomposición contable: dice *dónde*
 > está, en la contabilidad, el origen del estancamiento salarial.
 
-> **señala dónde cavar; Qué hay enterrado es harina de otro costal**
+> **Señala dónde cavar; qué hay enterrado es harina de otro costal**
 
 Fuente de verdad del diseño: [`DESIGN.md`](DESIGN.md). Seguimiento operativo:
 [`Seguimiento.md`](Seguimiento.md). Procedencia de datos: [`SOURCES.md`](SOURCES.md).
